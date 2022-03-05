@@ -1,0 +1,124 @@
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;   
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title-box{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+.footer{
+    align-self: center;    
+    margin-top: auto;
+}
+
+.footer-text{
+    font-weight: lighter;
+}
+
+.main-box{
+    display: flex;
+    justify-content: center;
+    gap: 100px;    
+    padding-top: 50px;
+}
+
+
+.container-right{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.color-picker-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.color-picker[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 75px;
+	height: 75px;
+    background-color: transparent;    
+}
+.color-picker[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+    background-color: transparent;
+    
+}
+.color-picker[type="color"]::-webkit-color-swatch {
+	border: none;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;    
+}
+
+.btn {
+    border: none;
+    margin-bottom: 13px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+.btn:hover,
+.btn:active{
+    transform: scale(1.10);
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+
+.grid-size{
+    padding-top: 20px;
+    align-self: center;
+    text-align: center;
+    margin: 0;
+}
+
+#size-value{
+    margin: 0;
+}
+
+.main-grid-box{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    box-shadow: 4px 3px 6px 0px rgba(0,0,0,0.2)
+}
+
+#container {
+    --size: 16;   
+    display: grid;    
+    width: 500px;
+    height: 500px;    
+    grid-template-columns: repeat(var(--size), 1fr);
+    grid-template-rows: repeat(var(--size), 1fr);    
+}
+
+.grid{
+    background-color: #f5f5f5; 
+}
+
+.color{
+    background-color: black;
+}
