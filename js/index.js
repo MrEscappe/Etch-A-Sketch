@@ -16,6 +16,7 @@ gridSlide.onchange = (e) => gridUpdate(e.target.value)
 
 function newSizeGrid(newSize){
     defaultSize = newSize
+}
 
 function createGrid(size){    
     container.style.setProperty("--size", size)
